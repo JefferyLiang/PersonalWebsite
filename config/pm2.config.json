@@ -1,0 +1,19 @@
+{
+  "apps": [{
+    "name": "app",
+    "script": "./server/app.ts",
+    "exec_mode": "fork",
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "watch": [
+      "server"
+    ],
+    "ignore_watch": [
+      "node_modules",
+      "log"
+    ],
+    "error_file": "./log/pm2/prod/app-err.log",
+    "out_file": "./log/pm2/prod/app-out.log"
+  }]
+}

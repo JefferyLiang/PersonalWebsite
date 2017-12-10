@@ -1,0 +1,12 @@
+{
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": "3000"
+  },
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "watch": [ "server/" ],
+  "ignore": [ "node_modules", "log", "public", "client", ".git", ".DS_Store" ],
+  "ext": "ts"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "koa-ts",
+  "version": "1.0.0",
+  "description": "a koa 2 development base frame",
+  "scripts": {
+    "build": "webpack --config build/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/app.ts",
+    "prod": "pm2 start config/pm2.config.json",
+    "prod-stop": "pm2 stop app && pm2 delete app"
+  },
+  "author": "Jeffery Liang",
+  "license": "MIT",
+  "dependencies": {
+    "@types/koa": "^2.0.42",
+    "@types/koa-router": "^7.0.27",
+    "@types/node": "^8.0.57",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/koa-static": "^3.0.2",
+    "nodemon": "^1.12.5",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.2"
+  },
+  "bin": {
+    "ts-node": "node_modules/.bin/ts-node",
+    "nodemon": "node_modules/.bin/nodemon"
+  }
+}
