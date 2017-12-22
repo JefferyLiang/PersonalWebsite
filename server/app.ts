@@ -4,8 +4,6 @@ import * as Json from 'koa-json'
 import * as path from 'path'
 const app = new Koa()
 
-module.exports = app
-
 // onError
 import { onError } from './middlewares/errorCatcher' 
 app.use(onError)
@@ -24,6 +22,7 @@ import bodyparser from './middlewares/bodyparser'
 app.use(bodyparser)
 
 // router
-import './routes/index'
+import main from './routes/index'
+app.use(main.routes())
 
-app.listen(3000)
+module.exports = app

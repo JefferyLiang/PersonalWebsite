@@ -1,7 +1,7 @@
 {
   "apps": [{
     "name": "app",
-    "script": "./server/app.ts",
+    "script": "./server/index.ts",
     "exec_mode": "fork",
     "env": {
       "NODE_ENV": "production"

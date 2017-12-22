@@ -6,4 +6,4 @@ router.prefix('/')
 
 router.get('/', Index.index)
 
-app.use(router.routes())
+export default router
