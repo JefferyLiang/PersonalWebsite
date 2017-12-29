@@ -17,14 +17,17 @@
     "@types/node": "^8.0.57",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
+    "koa-connect-history-api-fallback": "^0.3.1",
     "koa-convert": "^1.2.0",
     "koa-json": "^2.0.2",
     "koa-logger": "^3.1.0",
     "koa-router": "^7.3.0",
-    "koa-static": "^4.0.2"
+    "koa-static": "^4.0.2",
+    "superagent": "^3.8.2"
   },
   "devDependencies": {
     "@types/koa-static": "^3.0.2",
+    "@types/superagent": "^3.5.6",
     "nodemon": "^1.12.5",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"

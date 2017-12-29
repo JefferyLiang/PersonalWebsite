@@ -1,0 +1,10 @@
+$gary: rgba(0, 0, 0, .1);
+
+@mixin flex ($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin CormorantUpright () {
+  font-family: 'Cormorant Upright', serif;
+}
