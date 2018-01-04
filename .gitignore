@@ -1,5 +1,6 @@
 /node_modules
 /public/img
+/log/pm2
 *.DS_Store
 package-lock.json
 .git

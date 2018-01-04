@@ -2,7 +2,7 @@
   <div class="index-main">
     <div class="carousel-container">
       <carousel v-model="carouselIdx" class="carousel" :dots="'inside'" :radius-dot="false" :arrow="'never'" :height="500">
-        <carousel-item v-for="(item, index) of carousel">
+        <carousel-item v-for="(item, index) of carousel" :key="index">
           <div class="item-container">
             <div class="bg-image-container">
               <img :src="item.img">
@@ -16,6 +16,8 @@
           </div>
         </carousel-item>
       </carousel>
+    </div>
+    <div class="article-segement-container">
     </div>
   </div>
 </template>

@@ -27,6 +27,8 @@ app.use(bodyparser)
 // router
 // import main from './routes/index'
 // app.use(main.routes())
+import users from './routes/users'
+app.use(users.routes())
 
 // fallback
 app.use(require('koa-static')(path.join(__dirname, '../client/dist')))
