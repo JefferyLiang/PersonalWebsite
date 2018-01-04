@@ -1,10 +1,11 @@
 {
   "apps": [{
-    "name": "app",
+    "name": "app:3000",
     "script": "./server/index.ts",
     "exec_mode": "fork",
     "env": {
-      "NODE_ENV": "production"
+      "NODE_ENV": "production",
+      "PORT": "3000"
     },
     "watch": [
       "server"
@@ -13,7 +14,24 @@
       "node_modules",
       "log"
     ],
-    "error_file": "./log/pm2/prod/app-err.log",
-    "out_file": "./log/pm2/prod/app-out.log"
+    "error_file": "./log/pm2/prod:3000/app-err.log",
+    "out_file": "./log/pm2/prod:3000/app-out.log"
+  }, {
+    "name": "app:3001",
+    "script": "./server/index.ts",
+    "exec_mode": "fork",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": "3001"
+    },
+    "watch": [
+      "server"
+    ],
+    "ignore_watch": [
+      "node_modules",
+      "log"
+    ],
+    "error_file": "./log/pm2/prod:3001/app-err.log",
+    "out_file": "./log/pm2/prod:3001/app-out.log"
   }]
 }
