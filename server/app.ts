@@ -4,7 +4,6 @@ import * as Json from 'koa-json'
 import * as path from 'path'
 import * as convert from 'koa-convert'
 import * as history from 'koa-connect-history-api-fallback'
-import * as request from 'superagent'
 const app = new Koa()
 
 // onError

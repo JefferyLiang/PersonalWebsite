@@ -1,5 +1,7 @@
 $gary: rgba(0, 0, 0, .1);
 
+$mainGary: #f5f5f5;
+
 @mixin flex ($direction) {
   display: flex;
   flex-direction: $direction;
@@ -7,4 +9,15 @@ $gary: rgba(0, 0, 0, .1);
 
 @mixin CormorantUpright () {
   font-family: 'Cormorant Upright', serif;
+}
+
+@mixin arrow() {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 42px;
+  height: 42px;
+  left: calc(50% - 30px);
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
 }

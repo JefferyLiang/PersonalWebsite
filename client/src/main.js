@@ -8,6 +8,8 @@ Vue.config.productionTip = false
 
 // i-view
 import '@/plugins/iView'
+// vue-svg-icon
+import '@/plugins/svg-icon'
 
 /* eslint-disable no-new */
 new Vue({
