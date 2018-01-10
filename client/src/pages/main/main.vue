@@ -100,7 +100,6 @@ export default {
   }
 }
 .carousel{
-  // height: 250px;
   .item-container{
     @include flex(row);
     position: relative;
